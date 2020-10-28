@@ -14,9 +14,41 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/test', function(){
-	return "Testing Routing Berhasil";
+Route::get('login', function(){
+	return view('login');
+});
+
+Route::get('signup', function(){
+	return view('signup');
+});
+
+Route::get('fullview', function(){
+	return view('fullview');
+});
+
+Route::get('admin', function(){
+	return view('adminlogin');
+});
+
+Route::get('beranda', function(){
+	return view('beranda');
+});
+
+Route::get('produk', function(){
+	return view('produk');
+});
+
+Route::get('kategori', function(){
+	return view('kategori');
+});
+
+Route::get('pelanggan', function(){
+	return view('pelanggan');
+});
+
+Route::get('supplier', function(){
+	return view('supplier');
 });
